@@ -1,7 +1,6 @@
 package br.com.unip.apilivrariaautomatizada.repository.spec;
 
 import br.com.unip.apilivrariaautomatizada.model.entity.Livro;
-import br.com.unip.apilivrariaautomatizada.model.enums.GeneroEnum;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.jpa.domain.Specification;
 

@@ -2,16 +2,15 @@ package br.com.unip.apilivrariaautomatizada.service;
 
 import br.com.unip.apilivrariaautomatizada.mapper.LivroMapper;
 import br.com.unip.apilivrariaautomatizada.model.dto.ImageDTO;
-import br.com.unip.apilivrariaautomatizada.model.request.LivroCreateRequest;
-import br.com.unip.apilivrariaautomatizada.model.request.LivroUpdateRequest;
 import br.com.unip.apilivrariaautomatizada.model.entity.GeneroLivro;
 import br.com.unip.apilivrariaautomatizada.model.entity.Livro;
+import br.com.unip.apilivrariaautomatizada.model.request.LivroCreateRequest;
+import br.com.unip.apilivrariaautomatizada.model.request.LivroUpdateRequest;
 import br.com.unip.apilivrariaautomatizada.model.response.LivroResponse;
 import br.com.unip.apilivrariaautomatizada.repository.GeneroLivroRepository;
 import br.com.unip.apilivrariaautomatizada.repository.LivroRepository;
 import br.com.unip.apilivrariaautomatizada.repository.spec.LivroSpecification;
 import lombok.RequiredArgsConstructor;
-import lombok.var;
 import org.springframework.data.jpa.domain.Specification;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
