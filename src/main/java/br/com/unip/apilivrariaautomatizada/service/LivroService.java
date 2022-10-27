@@ -11,6 +11,7 @@ import br.com.unip.apilivrariaautomatizada.repository.GeneroLivroRepository;
 import br.com.unip.apilivrariaautomatizada.repository.LivroRepository;
 import br.com.unip.apilivrariaautomatizada.repository.spec.LivroSpecification;
 import lombok.RequiredArgsConstructor;
+import lombok.var;
 import org.springframework.data.jpa.domain.Specification;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
