@@ -101,7 +101,7 @@
 
 
     <build>
-        <finalName>api-livravria-automatizada</finalName>
+        <finalName>api-virtual-lib</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
