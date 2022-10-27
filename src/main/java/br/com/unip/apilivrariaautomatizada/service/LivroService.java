@@ -114,7 +114,7 @@ public class LivroService {
 
     public List<LivroResponse> mostrarTodosLivros(Long idGeneroLivro, String nomeLivro) {
 
-        var spec = Specification.where(new LivroSpecification(idGeneroLivro, nomeLivro));
+        Specification spec = Specification.where(new LivroSpecification(idGeneroLivro, nomeLivro));
         List<LivroResponse> response = livroMapper.toLivroResponseList(livroRepository.findAll(spec));
 
         try {

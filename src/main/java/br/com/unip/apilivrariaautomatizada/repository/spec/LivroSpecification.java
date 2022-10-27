@@ -9,6 +9,7 @@ import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Predicate;
 import javax.persistence.criteria.Root;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 
 @RequiredArgsConstructor
@@ -20,13 +21,13 @@ public class LivroSpecification implements Specification<Livro> {
 
     @Override
     public Predicate toPredicate(Root<Livro> root, CriteriaQuery<?> query, CriteriaBuilder criteriaBuilder) {
-        var predicates = new ArrayList<Predicate>();
+        List<Predicate> predicates = new ArrayList<Predicate>();
 
         if (idGeneroLivro != null) {
             predicates.add(criteriaBuilder.equal(root.get("generoLivro").get("id"), idGeneroLivro));
         }
 
-        if (Objects.nonNull(nomeLivro) && !nomeLivro.isBlank()) {
+        if (Objects.nonNull(nomeLivro) && !nomeLivro.isEmpty()) {
             predicates.add(criteriaBuilder.like(root.get("titulo"), "%" + nomeLivro + "%"));
         }
 

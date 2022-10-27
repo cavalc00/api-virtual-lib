@@ -14,6 +14,8 @@ import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Service;
 import org.springframework.web.server.ResponseStatusException;
 
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 import java.util.Objects;
 import java.util.Optional;
@@ -55,7 +57,7 @@ public class UserService {
                 .email(userDTO.getUsername())
                 .picture(userDTO.getPicture())
                 .idGoogle(userDTO.getPassword())
-                .perfis(List.of(perfil))
+                .perfis(Collections.singletonList(perfil))
                 .build();
 
         Usuario usuario = usuarioRepository.save(newUser);
