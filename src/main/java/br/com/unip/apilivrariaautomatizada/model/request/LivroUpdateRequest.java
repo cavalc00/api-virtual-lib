@@ -31,5 +31,5 @@ public class LivroUpdateRequest {
 
     private Boolean flagDisponivel;
 
-    private String capa;
+    private String imageUrl;
 }

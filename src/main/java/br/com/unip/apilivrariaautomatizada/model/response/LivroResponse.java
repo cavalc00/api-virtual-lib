@@ -1,12 +1,9 @@
 package br.com.unip.apilivrariaautomatizada.model.response;
 
-import br.com.unip.apilivrariaautomatizada.model.enums.GeneroEnum;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-
-import java.sql.Blob;
 
 @Data
 @AllArgsConstructor
@@ -28,7 +25,7 @@ public class LivroResponse {
 
     private Integer anoLancamento;
 
-    private Blob capa;
+    private String imageUrl;
 
     private Boolean flagDisponivel;
 }

@@ -34,6 +34,6 @@ public class LivroCreateRequest {
     @NotNull(message = "Flag necessária.")
     private Boolean flagDisponivel;
 
-    private String capa;
+    private String ImageUrl;
 
 }

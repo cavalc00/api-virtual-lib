@@ -39,4 +39,7 @@ public class Livro {
 
     @Column(name = "FlagDisponivel")
     private Boolean flagDisponivel;
+
+    @Column(name = "ImageUrl")
+    private String imageUrl;
 }
