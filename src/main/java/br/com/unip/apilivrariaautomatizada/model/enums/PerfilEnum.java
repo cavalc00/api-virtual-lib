@@ -7,8 +7,8 @@ import lombok.RequiredArgsConstructor;
 @Getter
 public enum PerfilEnum {
 
-    ADMIN(1L),
-    USER(2L);
+    ADMIN(4L),
+    USER(14L);
 
     private final Long id;
 
